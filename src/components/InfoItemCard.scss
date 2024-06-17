@@ -1,0 +1,36 @@
+// 详情卡片
+.info-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-grey-3);
+  border-radius: var(--border-radius);
+  padding: 12px 15px;
+
+  display: grid;
+  gap: 22px 12px;
+
+  &.col2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &.col6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .info-item-title {
+    color: var(--color-black);
+    font-size: var(--font-size-md);
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .info-item-value {
+    color: var(--color-grey-4);
+    font-size: var(--font-size-sm);
+  }
+}
